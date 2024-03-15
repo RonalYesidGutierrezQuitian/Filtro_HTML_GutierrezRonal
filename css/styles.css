@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1vi;
+}
+
+h1, h2, h3, h4, h5 {
+    color: rgba(45, 10, 183, 0.768);
+}
+
+.selectedPage {
+    border: solid 2px black;
+    border-top-left-radius: 0.5vi;
+    border-top-right-radius: 0.5vi;
+    border-bottom-left-radius: 0.5vi;
+    border-bottom-right-radius: 0.5vi;
+}
+
+
+container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background: rgba(147, 179, 238, 0.916);
+
+}
+
+.left {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vi 1vi;
+    display: grid;
+    border: red solid 1px;
+    margin: 1vi;
+}
+
+.menu  {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.right {
+    height: 90vh;
+    padding: 2vi 1vi;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    border: green solid 1px;
+    margin: 1vi;
+}
+
+.right-content-products {
+    background-color: white;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1vi;
+    border: rgba(28, 78, 172, 0.916) solid;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top-left-radius: 0.5vi;
+    border-top-right-radius: 0.5vi;
+    border-bottom-left-radius: 0.5vi;
+    border-bottom-right-radius: 0.5vi;
+}
+
+.product {
+    margin: 1vi 2vi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 14.5vw;
+    height: 35vh;
+    border: solid rgba(147, 179, 238, 0.916);
+    border-top-left-radius: 0.5vi;
+    border-top-right-radius: 0.5vi;
+    border-bottom-left-radius: 0.5vi;
+    border-bottom-right-radius: 0.5vi;
+
+}
+
+
+.product .product-Price-Add {
+    display: grid;
+    margin: 0 1vi;
+    padding: 1vi;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 12.5vw;
+    border: solid rgba(147, 179, 238, 0.916);
+    border-top-left-radius: 0.5vi;
+    border-top-right-radius: 0.5vi;
+    border-bottom-left-radius: 0.5vi;
+    border-bottom-right-radius: 0.5vi;
+}
+
+
+
+.photo-1 {
+    width: 10vi;
+    height: 14vi;
+    background: url(https://http2.mlstatic.com/D_NQ_NP_2X_787280-MCO51843885132_102022-F.webp);
+    background-repeat: no-repeat;
+    background-size: 10vi
+}
