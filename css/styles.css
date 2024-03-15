@@ -42,7 +42,6 @@ container {
     justify-content: space-between;
     padding: 2vi 1vi;
     display: grid;
-    border: red solid 1px;
     margin: 1vi;
 }
 
@@ -60,7 +59,6 @@ container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 6fr;
-    border: green solid 1px;
     margin: 1vi;
 }
 
@@ -110,6 +108,49 @@ container {
     border-bottom-right-radius: 0.5vi;
 }
 
+/* Carrito */
+
+.right-content-products-carrito {
+    background-color: white;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr;
+    margin: 0.5vi 0;
+    border: rgba(28, 78, 172, 0.916) solid;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top-left-radius: 0.5vi;
+    border-top-right-radius: 0.5vi;
+    border-bottom-left-radius: 0.5vi;
+    border-bottom-right-radius: 0.5vi;
+}
+
+.product-Carrito {
+    margin: 1vi 2vi;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    height: 19vh;
+    border: solid rgba(147, 179, 238, 0.916);
+    border-top-left-radius: 0.5vi;
+    border-top-right-radius: 0.5vi;
+    border-bottom-left-radius: 0.5vi;
+    border-bottom-right-radius: 0.5vi;
+}
+
+table {
+    width: 40vw;
+    text-align: justify;
+}
+
+.botonesCarrito {
+    display: flex;
+    flex-direction: row;
+    margin: 1vi;
+    justify-content: space-around;
+}
 
 
 .photo-1 {
@@ -233,3 +274,143 @@ container {
     background-repeat: no-repeat;
     background-size: 10vi
 }
+
+
+
+
+.photo-carrito {
+    width: 6vi;
+    height: 8vi;
+    background-size: 6vi
+}
+
+.photo-pequeno {
+    width: 4vi;
+    height: 5.6vi;
+    background-size: 4vi
+}
+
+
+
+
+
+
+
+
+/*  */
+
+/* others */
+.gif {
+    height: 50vh;
+    width: 40vw;
+    background: url(https://c.tenor.com/PQhYXs7lLmsAAAAC/tenor.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 25%;
+}
+
+.vacio {
+    text-align: center;
+}
+
+svg {
+    height: 3.5vi;
+    width: 3.5vi;
+}
+
+
+
+@media (max-width: 600px) { 
+    container {
+        width: 95vw;
+        height: 25vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr;
+        background: rgba(147, 179, 238, 0.916);
+    }
+
+    .left {
+        width: 90vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5vi 1vi 0 1vi;
+        margin: 1vi;
+    }
+
+    left h2 {
+        display: none;
+    }
+
+    left a {
+        font-size: 1rem;
+    }
+    
+
+    .right {
+        width: 90vw;
+        height: auto;
+        padding: 2vi 1vi;
+        display: flex;
+        flex-direction: column;
+        margin: 1vi;
+    }
+
+    .right-content-products {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+        margin: 1vi;
+        padding: 2vi;
+        border: rgba(28, 78, 172, 0.916) solid;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-top-left-radius: 0.5vi;
+        border-top-right-radius: 0.5vi;
+        border-bottom-left-radius: 0.5vi;
+        border-bottom-right-radius: 0.5vi;
+    }
+
+    .product {
+        margin: 1vi 2vi;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80vw;
+        height: 35vh;
+        border: solid rgba(147, 179, 238, 0.916);
+        border-top-left-radius: 0.5vi;
+        border-top-right-radius: 0.5vi;
+        border-bottom-left-radius: 0.5vi;
+        border-bottom-right-radius: 0.5vi;
+    }
+
+    .product .product-Price-Add {
+        display: grid;
+        margin: 0 1vi;
+        padding: 0 1vi;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        width: 30vw;
+        border: solid rgba(147, 179, 238, 0.916);
+        border-top-left-radius: 0.5vi;
+        border-top-right-radius: 0.5vi;
+        border-bottom-left-radius: 0.5vi;
+        border-bottom-right-radius: 0.5vi;
+    }
+
+    .product .product-Price-Add p {
+        width: 20vw;
+    }
+
+    .product p {
+        width: 30vw;
+    }
+
+}
+
+
